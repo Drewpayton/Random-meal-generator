@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke;
+}
+
+.food-background {
+    background-color: rgb(205, 205, 205);
+   
+    padding: 5px;
+    display: inline-flex;
+    display: inline-block;
+    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    margin-bottom: 10px;
+}
+
+.max-card {
+    max-width: 500px;
+}
+
+ /* .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+} */
+
+.float-child {
+    display: flex;
+    display: inline-block;
+}  
+
