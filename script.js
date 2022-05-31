@@ -13,6 +13,7 @@ const printMeals11 = document.querySelector('#food-11');
 const printMeals12 = document.querySelector('#food-12');
 const printCard = document.querySelector('#title-food');
 const videoCard = document.querySelector('#video-for');
+const refreshButton = document.querySelector('#refresh');
 
 
 
@@ -901,3 +902,17 @@ printCard.classList.add('food-background');
 console.log(meals);
 
 console.log(math);
+
+
+function refresher() {
+   let info = confirm('Are you sure you want to a new recipe?')
+
+   if(info) {
+       location.reload()
+   }else {
+       return;
+   }
+
+}
+
+refreshButton.addEventListener('click', refresher)
