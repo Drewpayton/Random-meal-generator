@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "random-meal-generator",
+  "description": "This is a random filipino meal generator, whenever you load it up it will randomly generate out of 21 meals.\r I used mostly basic css and vanilla javascript to try and improve and define my skills. Some features that\r i would like to add is a page before the random meal pops up and the page has a button that you can click that will take\r you to the random meal.",
+  "version": "1.0.0",
+  "main": "recipies.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drewpayton/Random-meal-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drewpayton/Random-meal-generator/issues"
+  },
+  "homepage": "https://github.com/Drewpayton/Random-meal-generator#readme"
+}
