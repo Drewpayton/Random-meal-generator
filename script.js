@@ -1,4 +1,3 @@
-import { meal } from "./recipies";
 const printMeals = document.querySelector('#food');
 const printMeals1 = document.querySelector('#food-1');
 const printMeals2 = document.querySelector('#food-2');
@@ -16,11 +15,6 @@ const printCard = document.querySelector('#title-food');
 const videoCard = document.querySelector('#video-for');
 const refreshButton = document.querySelector('#refresh');
 
-console.log(meal)
-
-
-
-
 var math = Math.floor(Math.random() * 21);
 var youtubeVid = meals[math].youtube
 printMeals.append(meals[math].title);
@@ -36,7 +30,6 @@ printMeals9.append(meals[math].tellIngredients);
 printMeals11.append(meals[math].tellInstructions);
 videoCard.setAttribute('src', youtubeVid)
 
-
 for (i = 0; i < meals[math].ingredients.length; i++ ) {
     let allIngred = document.createElement('li');
     allIngred.textContent = meals[math].ingredients[i]
@@ -49,12 +42,7 @@ for (i = 0; i < meals[math].instructions.length; i++ ) {
     printMeals12.append(allInstr)
 }
 
-
 printCard.classList.add('food-background');
-console.log(meals);
-
-console.log(math);
-
 
 function refresher() {
    let info = confirm('Are you sure you want to a new recipe?')
@@ -63,8 +51,7 @@ function refresher() {
        location.reload()
    }else {
        return;
-   }
-
-}
+   };
+};
 
 refreshButton.addEventListener('click', refresher)
